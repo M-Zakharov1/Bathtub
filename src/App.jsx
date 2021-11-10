@@ -20,8 +20,8 @@ export default function App() {
   return (
     <div className="App">
       <div className="App-buttons">
-        <button disabled={water === 100} onClick={() => change(true)}> Increase </button>
-        <button disabled={water === 0} onClick={() => change(false)}> Pour out </button>
+        <button disabled={water === 100} onClick={() => change(true)}> increaseWaterLevel </button>
+        <button disabled={water === 0} onClick={() => change(false)}> decreaseWaterLevel </button>
       </div>
       <span className='bathtub-description'>Water Level: {water}%</span>
       <div className='bathtub'>
